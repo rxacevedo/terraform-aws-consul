@@ -45,3 +45,12 @@ variable "ssh_key_name" {
   description = "The name of an EC2 Key Pair that can be used to SSH to the EC2 Instances in this cluster. Set to an empty string to not associate a Key Pair."
   default     = ""
 }
+
+variable "vpc_id" {
+  default = ""
+}
+
+variable "subnet_ids" {
+  type = "list"
+  default = []
+}
